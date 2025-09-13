@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Profile - Meow Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-[#6F4E37]">
+
+    <header class="bg-white/70 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-black text-2xl text-brown-dark">
+                Meow Company 🐾
+            </a>   
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="hover:text-[#D97706]">Home</a>
+                <a href="profile.html" class="hover:text-[#D97706]">Our Profile</a>
+                <a href="index.html#catteries" class="hover:text-[#D97706]">Our Team</a>
+                <a href="index.html#message-us" class="bg-[#D97706] text-white py-2 px-4 rounded-full hover:bg-opacity-90 transition-colors">Message Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="hamburger-btn" class="focus:outline-none">
+                    <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-md">
+            <a href="index.html" class="block py-2 px-6 text-sm hover:bg-[#E8D8C4]">Home</a>
+            <a href="profile.html" class="block py-2 px-6 text-sm hover:bg-[#E8D8C4]">Our Profile</a>
+            <a href="index.html#catteries" class="block py-2 px-6 text-sm hover:bg-[#E8D8C4]">Our Team</a>
+            <a href="index.html#message-us" class="block py-2 px-6 text-sm hover:bg-[#E8D8C4]">Message Us</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <section class="mb-12">
+            <div class="h-80 bg-cover bg-center rounded-2xl shadow-lg" style="background-image: url('https://placecats.com/louie/1200/800');">
+                <div class="bg-black bg-opacity-40 h-full flex items-center justify-center rounded-2xl">
+                    <h1 class="text-3xl font-black text-white lg:text-5xl">The Meow Company Story</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#E8D8C4] p-8 rounded-2xl shadow-lg mb-12">
+            <h2 class="text-4xl font-black text-[#6F4E37] mb-4">About Us</h2>
+            <p class="text-lg leading-relaxed">
+                Welcome to Meow Company! We started with a simple dream: to create a world where every meow is heard and every purr is cherished. We believe in the power of a comfy nap, the joy of chasing a laser pointer, and the serene happiness of a cat kneading on a soft blanket. Our business is built on these core principles of comfort, play, and contentment.
+            </p>
+        </section>
+
+        <section class="bg-white p-8 rounded-2xl shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-3xl font-bold text-[#6F4E37] mb-2">Our Vision</h3>
+                    <p class="text-lg">To be the world's leading provider of happiness, one cat at a time. We envision a future where humans and felines coexist in perfect, purring harmony.</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-[#6F4E37] mb-2">Our Mission</h3>
+                    <p class="text-lg">To craft delightful experiences and products that enrich the lives of cats and their human companions, ensuring every day is filled with joy and comfort.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#6F4E37] text-white mt-16">
+        <div class="container mx-auto px-6 py-4 text-center">
+            Created with ❤️ by Meow Company
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
